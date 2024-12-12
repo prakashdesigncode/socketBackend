@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://54.89.60.230","*"],
+    origin: ["http://54.89.60.230:5000","*"],
     methods: ["GET", "POST"],
   },
 });
